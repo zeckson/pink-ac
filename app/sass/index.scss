@@ -1,7 +1,8 @@
 $tablet-width: 768px;
 $desktop-width: 1200px;
+$bg-header: #1d2631;
 $font-family: 'Open Sans', sans-serif;
-$bg-header: #81b3d2;
+
 
 body {
   min-width: 320px;
@@ -16,7 +17,7 @@ body {
   width: 320px;
   min-height: 734px;
   position: relative;
-  background-color: rgba(#1d2631, 1%);
+  background-color: rgba($bg-header, 1%);
   background-image: url("../img/back-mobile@1x.jpg.png");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -34,17 +35,7 @@ body {
   padding-right: 20px;
   padding-left: 20px;
   width: 280px;
-  background-color: rgba(#1d2631, 1%);
-}
-
-.header__iphone-img{
-  padding-top: 82px;
-  position: relative;
-  background-image: url("../img/Layer 155.png");
-  background-repeat: no-repeat;
-  background-position-y: 114px;
-  background-position-x: 103px;
-  background-size: 112px  ;
+  background-color: rgba(#1d2631, 0.6);
 }
 
 .popup__btn-open {
@@ -52,6 +43,58 @@ body {
   padding: 0;
   background-color: initial;
 }
+
+.header__iphone-img {
+  padding-top: 82px;
+  position: relative;
+  background-image: url("../img/Layer 155.png");
+  background-repeat: no-repeat;
+  background-position-y: 114px;
+  background-position-x: 103px;
+  background-size: 112px;
+}
+.header__present{
+  padding-top: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+  p{
+    color: white;
+    text-align: center;
+  }
+}
+.download__app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 274px;
+  height: 50px;
+  background-color: initial;
+  border: 3px white solid;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+}
+.platform__icon{
+  width: 280px;
+  padding-top: 32px;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin: 0;
+  li:nth-child(1){
+    padding-right: 37px;
+  }
+  li:nth-child(2){
+    padding-right: 37px;
+  }
+}
+
+
 
 
 
