@@ -2,15 +2,18 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var del = require('del');
+var concat = require('gulp-concat');
 
 gulp.task('sass', function () {
     return gulp.src('app/sass/**/*.+(scss|sass)')
         .pipe(sass.sync().on('error', sass.logError))
-        .pipe(gulp.dest('app/css'))
+        .pipe(concat('style.css'))
+        .pipe(gulp.dest('app/css/'))
         .pipe(browserSync.reload({
             stream: true
         }))
 });
+
 
 gulp.task('clean', function () {
     return del(['app/css']);
