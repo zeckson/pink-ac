@@ -1,0 +1,14 @@
+
+.idea
+*.sublime*
+
+*.ai
+*.pdf
+
+node_modules/
+npm-debug.*
+
+Thumbs.db
+.DS_Store
+
+app/css/

@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
+var del = require('del');
 
 gulp.task('sass', function () {
     return gulp.src('app/sass/**/*.+(scss|sass)')
@@ -9,6 +10,10 @@ gulp.task('sass', function () {
         .pipe(browserSync.reload({
             stream: true
         }))
+});
+
+gulp.task('clean', function () {
+    return del(['app/css']);
 });
 
 gulp.task('browserSync', function () {
@@ -24,5 +29,5 @@ gulp.task('sass:watch', function () {
     gulp.watch('app/sass/**/*.+(scss|sass)', gulp.task('sass'))
 });
 
-gulp.task('start', gulp.parallel('sass', 'browserSync', 'sass:watch'))
+gulp.task('start', gulp.series('clean', gulp.parallel('sass', 'browserSync', 'sass:watch')));
 
