@@ -1,0 +1,48 @@
+.page__main {
+  width: 320px;
+}
+
+.main__title {
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    display: inline-block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    font-weight: lighter;
+  }
+
+  h2:nth-child(1) {
+    margin-top: 46px;
+    margin-bottom: 40px;
+  }
+}
+
+.main__about {
+  background-image: url("../img/Shape 2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 755px;
+  margin-top: -75px;
+
+  :nth-child(1) {
+    padding-top: 56px;
+  }
+}
+
+.main__about--text {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: center;
+}
+.main__iphone--img{
+
+}
