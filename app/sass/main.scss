@@ -96,8 +96,9 @@
   display: flex;
   justify-content: center;
   align-items: baseline;
-  padding-bottom: 10px;
+  padding-bottom: 50px;
 }
+
 
 .reviews__btn--style {
   padding: 0;
@@ -113,4 +114,24 @@
 .rev__btn--active {
   border: 3px #283645 solid;
   border-radius: 50%;
+}
+
+.decorate__block {
+  width: 0;
+  height: 0;
+  border-top: 20px white solid;
+  border-right: 320px #f2f2f2 solid;
+  padding-bottom: 50px;
+}
+
+.main__offer {
+  width: 320px;
+}
+
+.offer__table--title{
+  width: 250px;
+  height: 50px;
+  background: #283645;
+  border-right: 2px white solid;
+  border-left: 2px white solid;
 }
