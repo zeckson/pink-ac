@@ -203,17 +203,6 @@
   align-items: center;
   position: relative;
   background-color: white;
-
-  &::after {
-    content: "";
-    border-top: 60px black solid;
-    border-left: 165px white solid;
-    border-right: 165px white solid;
-    position: absolute;
-    top: 433px;
-    z-index: 100;
-  }
-
   a {
     color: red;
     font-size: 24px;
@@ -258,10 +247,20 @@
 
 .main__map{
   position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    border-top: 60px white solid;
+    border-left: 165px transparent solid;
+    border-right: 165px transparent solid;
+    top: 0;
+    z-index: 100;
+  }
   img:nth-child(1){
     position: absolute;
     z-index: -1;
-    top:-420px
+    top:-420px;
+
   }
   img:nth-child(2){
     position: absolute;
