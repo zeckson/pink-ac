@@ -34,3 +34,4 @@ gulp.task('sass:watch', function () {
 
 gulp.task('start', gulp.series('clean', gulp.parallel('sass', 'browserSync', 'sass:watch')));
 
+gulp.task('build', gulp.series('clean', 'sass'));
