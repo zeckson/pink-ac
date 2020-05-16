@@ -1,4 +1,5 @@
 
+
 .page__main {
   width: 320px;
   margin: 0 auto;
@@ -100,7 +101,7 @@
 }
 
 
-.reviews__btn--style {
+.mobile__btn--style {
   padding: 0;
   width: 12px;
   height: 12px;
@@ -111,7 +112,7 @@
   margin-right: 20px;
 }
 
-.rev__btn--active {
+.mobile__btn--active {
   border: 3px #283645 solid;
   border-radius: 50%;
 }
@@ -183,4 +184,13 @@
   background-size: 29px;
   background-position-x: 90%;
   background-position-y: 50%;
+}
+
+.offer__btn{
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 101px;
+  background-color: #f2f2f2;
 }
