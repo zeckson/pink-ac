@@ -1,5 +1,4 @@
 
-
 .page__main {
   width: 320px;
   margin: 0 auto;
@@ -186,11 +185,88 @@
   background-position-y: 50%;
 }
 
-.offer__btn{
+.offer__btn {
   width: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 101px;
   background-color: #f2f2f2;
+}
+
+.main__contaсt {
+  min-height: 412px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: white;
+
+  &::after {
+    content: "";
+    border-top: 60px black solid;
+    border-left: 165px white solid;
+    border-right: 165px white solid;
+    position: absolute;
+    top: 433px;
+    z-index: 100;
+  }
+
+  a {
+    color: red;
+    font-size: 24px;
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+.main__contact--title {
+  h3 {
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 26px;
+    margin-bottom: 45px;
+    margin-top: 50px;
+  }
+}
+
+.contact__h--style {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 13px;
+}
+
+.main__contact--phone-number {
+  h4 {
+    padding-left: 60px;
+  }
+}
+
+.main__contact--email {
+  h4 {
+    padding-left: 90px;
+  }
+}
+
+.main__contact--address {
+  h4 {
+    padding-left: 15px;
+  }
+}
+
+.main__map{
+  position: relative;
+  img:nth-child(1){
+    position: absolute;
+    z-index: -1;
+    top:-420px
+  }
+  img:nth-child(2){
+    position: absolute;
+    z-index: 10;
+    top: 115px;
+    left:150px;
+  }
 }
